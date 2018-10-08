@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>To Do</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>To Do</h1>
+
+        <form id="task-form" action="/submit">
+            <input type="text" placeholder="Enter a task here" name="task-name" required/>
+            <label id="task-submit-label" for="submit-button">
+                Enter
+                <input id="submit-button" type="submit" name="task-submit"/>
+            </label>
+        </form>
+
+        <div id="task-area">
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

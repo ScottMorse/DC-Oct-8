@@ -1,0 +1,98 @@
+html {
+    font-family: Futura;
+    background-color: rgb(31, 176, 243);
+    color: whitesmoke;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.144);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+#task-form {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[name=task-name]{
+    padding: 10px;
+    font-size: 30px;
+    font-family: Futura;
+    background-color: whitesmoke;
+}
+
+[name=task-submit]{
+    display: none;
+}
+
+#task-submit-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: rgb(31, 176, 243);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#task-submit-label:hover {
+    cursor: pointer;
+}
+
+#task-area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    border: 3px solid whitesmoke;
+    width: 400px;
+    min-height: 500px;
+    box-shadow: 2px 2px 3px rgba(245, 245, 245, 0.308);
+    overflow-y: scroll;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    color: darkslategrey;
+    min-width: 300px;
+    padding: 10px;
+    transition: opacity 1s ease;
+}
+
+[name=check-task]{
+    display: none;
+}
+
+.checkmark {
+  min-height: 25px;
+  min-width: 25px;
+  background-color: whitesmoke;
+  border: 2px solid darkslategray;
+}
+
+.checkmark:hover {
+    cursor: pointer;
+}
+
+input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
